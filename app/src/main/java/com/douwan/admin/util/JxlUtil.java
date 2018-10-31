@@ -13,12 +13,12 @@ import jxl.Sheet;
 import jxl.Workbook;
 public class JxlUtil {
 	public static final String TAG = "wangweijun";
-	public static  void readXLS() {
+	public static  void readXLS(File file) {
 		try {
 			Workbook workbook = null;
 			try {
 				// 注意一定要xls的扩展名
-				File file=new File(Environment.getExternalStorageDirectory()+File.separator+"data2.xls");
+//				File file=new File(Environment.getExternalStorageDirectory()+File.separator+"data2.xls");
 				workbook = Workbook.getWorkbook(file);
 //                InputStream inputStream= getAssets().open("data2.xls");
 //                workbook=Workbook.getWorkbook(inputStream);

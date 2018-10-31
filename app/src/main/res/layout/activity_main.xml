@@ -19,4 +19,9 @@
         android:text="read Xlsx"
         android:onClick="readXlsx"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="star Test"
+        android:onClick="starTest"/>
 </LinearLayout>

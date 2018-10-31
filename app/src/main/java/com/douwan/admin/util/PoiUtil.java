@@ -13,12 +13,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class PoiUtil {
 	public static final String TAG = "wangweijun";
-	public static void readXlsx() {
+	public static void readXlsx(File file) {
 //        InputStream stream = getResources().openRawResource(R.raw.data);
 //        XSSFWorkbook workbook = new XSSFWorkbook(stream);
 		try {
 //            data.xlsx
-			File file=new File(Environment.getExternalStorageDirectory()+File.separator+"data.xlsx");
+//			File file=new File(Environment.getExternalStorageDirectory()+File.separator+"data.xlsx");
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 			int sheets = workbook.getNumberOfSheets();
 			Log.i(TAG, "一共有表 : "+sheets);
